@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+.department {
+  @apply text-gray-400;
+}
+
+.department.active {
+  @apply text-gray-800 font-bold;
+}
+
+.department.active::after {
+  content: "";
+  @apply block w-4 h-px bg-pink-600;
+}
